@@ -20,7 +20,7 @@ Atributy, které jsem scrapoval byly:
  - ad_name - název inzerátu (h1)
  - price - cena uvedená u inzerátu
  - contact_name - kontaktní osoba uvedená u inzerátu
- - contact number - číslo na kontaktní osobu
+ - contact number - číslo na kontaktní osobu (zde se číslo objevuje ve špatném formátu 728... zobraz číslo, protože pro zobrazení čísla je třeba nejdřve ověřit své číslo na stránce)
  - contact_locality - lokalita uvedená u inzerátu
  - ad_date - datum vytvoření inzerátu - scrapuje se ve tvaru *- HOT(optional) - [datum]* proto zde využívám funkci *.split("[")[-1]*, což mi vrátí *datum]* a proto ještě odstraním poslední znak pomocí:
  *ad_date[:-1].strip()*
